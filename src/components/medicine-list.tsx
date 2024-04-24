@@ -119,14 +119,14 @@ useEffect(()=>{
                         <Dialog.DialogOverlay className="fixed w-full h-full inset-0 bg-black/10"/>
                         <Dialog.Content className="min-w-8 fixed border border-white/10 rounded-md p-1.5 bg-zinc-50 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                         <Dialog.Title className="px-16 rounded-md bg-emerald-500 text-white">Dados do Medicamento</Dialog.Title>
-                          <div className="mt-0.5 flex flex-col gap-1 max-h-72">
+                           <div className="mt-0.5 flex flex-col gap-1 max-h-72">
                             <DialogSpan>Tipo: {medicine.documents[0]?.type}</DialogSpan>
                             <DialogSpan>Expediente: {medicine.documents[0]?.expedient}</DialogSpan>
-                            <DialogSpan>URl: {medicine.documents[0]?.url}</DialogSpan>
                             <DialogSpan>Princípio ativo: {medicine.active_principles[0]?.name}
                             </DialogSpan>
                            
-                            <button className="bg-emerald-500 text-white rounded-md mt-1.5">Baixar Bula</button>
+                            <button className="bg-emerald-500 text-white rounded-md mt-1.5">Baixar Bula
+                            <a href={medicine.documents[0]?.url}></a></button>
                           </div>
                         <Dialog.Close/>           
                       </Dialog.Content>    
