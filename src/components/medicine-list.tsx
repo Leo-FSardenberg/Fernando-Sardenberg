@@ -126,7 +126,7 @@ useEffect(()=>{
                             </DialogSpan>
                            
                             <button className="bg-emerald-500 text-white rounded-md mt-1.5">Baixar Bula
-                            <a href={medicine.documents[0]?.url}></a></button>
+                            <a download={medicine.documents[0]?.url}></a></button>
                           </div>
                         <Dialog.Close/>           
                       </Dialog.Content>    
